@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:odc_hackathon_lavie_app/core/design/theme/theme_data.dart';
+import 'package:odc_hackathon_lavie_app/core/routes/routes_manager.dart';
 import 'package:odc_hackathon_lavie_app/core/utils/app_strings.dart';
 
 void main() {
@@ -13,10 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: AppStrings.appName,
+      initialRoute: Routes.splashRoute,
+      onGenerateRoute: RouteGenerator.getRoute,
       theme: getApplicattionThemeData(),
-      home: Scaffold(
-        appBar: AppBar(),
-      ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

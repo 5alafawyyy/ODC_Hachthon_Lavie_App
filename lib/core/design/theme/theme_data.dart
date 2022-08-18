@@ -130,33 +130,33 @@ ThemeData getApplicattionThemeData() => ThemeData(
 
       // Text Theme
       textTheme: TextTheme(
-        displayLarge: getMediumStyle(
+        displayMedium: getMediumStyle(
           color: ColorManager.black,
           fontSize: FontSize.s19,
         ),
-        headline1: getBoldStyle(
+        headlineLarge: getBoldStyle(
           // My Cart
           color: ColorManager.black,
           fontSize: FontSize.s25,
         ),
-        headline2: getBoldStyle(
+        headlineMedium: getBoldStyle(
           color: ColorManager.primary,
           fontSize: FontSize.s22,
         ),
-        headline3: getRegularStyle(
+        headlineSmall: getRegularStyle(
           // Filter
           color: ColorManager.gray,
           fontSize: FontSize.s16,
         ),
-        subtitle1: getMediumStyle(
+        titleMedium: getMediumStyle(
           color: ColorManager.black,
           fontSize: FontSize.s16,
         ),
-        caption: getRegularStyle(
+        labelLarge: getRegularStyle(
           color: ColorManager.captionColor,
           fontSize: FontSize.s18,
         ),
-        bodyText1: getMediumStyle(
+        bodyLarge: getMediumStyle(
           color: ColorManager.gray,
           fontSize: FontSize.s16,
         ),
