@@ -1,5 +1,6 @@
 class AppStrings {
   static const appName = 'Lavie';
+  static const noRouteFound = 'No Route Found';
 
   /// ************ Auth Strings ************
   static const signUp = 'Sign up';
@@ -39,19 +40,13 @@ class AppStrings {
   static const back = 'Back';
 
   /// ************ Search Strings ************
-  
 
   /// ************ Profile Strings ************
 
-
   /// ************ Cart Strings ************
-  
 
   /// ************ Discussion Forums Strings ************
-  
 
   /// ************ Create New Post Strings ************
-
-
 
 }
