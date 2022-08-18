@@ -36,6 +36,7 @@ dependencies:
   flutter_bloc: ^8.1.1
   get_it: ^7.2.0
   google_fonts: ^3.0.1
+  shared_preferences: ^2.0.15
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -54,12 +55,12 @@ flutter:
   assets:
     - assets/images/splash_logo.png
     - assets/images/auth_edge.svg
- 
+
   fonts:
     - family: Meddon # For logo
       fonts:
         - asset: assets/fonts/Meddon.ttf
-      
+
     - family: Roboto # For whole Application
       fonts:
         - asset: assets/fonts/Roboto-Bold.ttf
