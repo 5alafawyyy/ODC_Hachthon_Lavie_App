@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:odc_hackathon_lavie_app/core/utils/app_strings.dart';
-import 'package:odc_hackathon_lavie_app/presentation/screens/forget_password/forget_password_view.dart';
+import 'package:odc_hackathon_lavie_app/presentation/screens/authentication/forget_password/forget_password_view.dart';
+import 'package:odc_hackathon_lavie_app/presentation/screens/authentication/login/login_view.dart';
+import 'package:odc_hackathon_lavie_app/presentation/screens/authentication/register/register_view.dart';
+import 'package:odc_hackathon_lavie_app/presentation/screens/blog/blog_view.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/home/home_view.dart';
-import 'package:odc_hackathon_lavie_app/presentation/screens/leave/leave_view.dart';
-import 'package:odc_hackathon_lavie_app/presentation/screens/login/login_view.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/notifications/notification_view.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/profile/profile_view.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/qr_code/qr_code_view.dart';
-import 'package:odc_hackathon_lavie_app/presentation/screens/register/register_view.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/splash/splach_view.dart';
 
 class Routes {
@@ -51,7 +51,7 @@ class RouteGenerator {
       case Routes.qrCodeScannerRoute:
         return MaterialPageRoute(builder: (_) => const QRCodeView());
       case Routes.leaveRoute:
-        return MaterialPageRoute(builder: (_) => const LeaveView());
+        return MaterialPageRoute(builder: (_) => const BlogView());
 
       default:
         return unDefinedRoute();
