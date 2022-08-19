@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:odc_hackathon_lavie_app/core/design/fonts/font_manager.dart';
 
 // Main text Style
@@ -8,7 +9,7 @@ TextStyle _getTextStyle(
   Color color,
 ) {
   return TextStyle(
-    fontSize: fontSize,
+    fontSize: fontSize.sp,
     fontWeight: fontWeight,
     color: color,
   );
@@ -20,7 +21,7 @@ TextStyle getRegularStyle({
   required Color color,
 }) {
   return _getTextStyle(
-    fontSize,
+    fontSize.sp,
     FontWeightManager.regular,
     color,
   );
@@ -32,7 +33,7 @@ TextStyle getMediumStyle({
   required Color color,
 }) {
   return _getTextStyle(
-    fontSize,
+    fontSize.sp,
     FontWeightManager.medium,
     color,
   );
@@ -44,7 +45,7 @@ TextStyle getBoldStyle({
   required Color color,
 }) {
   return _getTextStyle(
-    fontSize,
+    fontSize.sp,
     FontWeightManager.bold,
     color,
   );
@@ -56,7 +57,7 @@ TextStyle getLightStyle({
   required Color color,
 }) {
   return _getTextStyle(
-    fontSize,
+    fontSize.sp,
     FontWeightManager.light,
     color,
   );

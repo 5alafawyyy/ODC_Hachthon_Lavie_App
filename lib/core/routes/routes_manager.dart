@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:odc_hackathon_lavie_app/core/utils/app_strings.dart';
+import 'package:odc_hackathon_lavie_app/presentation/screens/authentication/auth_layout.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/authentication/forget_password/forget_password_view.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/authentication/login/login_view.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/authentication/register/register_view.dart';
@@ -15,6 +16,7 @@ class Routes {
   static const String splashRoute = '/';
 
   // Auth
+  static const String authLayoutRoute = '/AuthLayoutView';
   static const String loginRoute = '/login';
   static const String registerRoute = '/register';
   static const String forgetPasswordRoute = '/forgetPassword';
@@ -36,6 +38,8 @@ class RouteGenerator {
     switch (settings.name) {
       case Routes.splashRoute:
         return MaterialPageRoute(builder: (_) => const SplashView());
+      case Routes.authLayoutRoute:
+        return MaterialPageRoute(builder: (_) => const AuthLayoutView());
       case Routes.loginRoute:
         return MaterialPageRoute(builder: (_) => const LoginView());
       case Routes.registerRoute:

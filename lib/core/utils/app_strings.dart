@@ -7,11 +7,17 @@ class AppStrings {
   static const login = 'Login';
   static const email = 'Email';
   static const password = 'Password';
+  static const forgetPassword = 'Forget Password?';
   static const orContinueWith = 'or continue with';
   static const firstName = 'First Name';
   static const lastName = 'Last Name';
   static const eMail = 'E-mail';
   static const confirmPassword = 'Confirm password';
+  static const resetPassword = 'Reset password';
+  static const forgotYourPassword = 'Forgot your password?';
+  static const yourEmailAddress = 'Email Address';
+  static const enterYourEmailAddress =
+      'Enter your email address to retrieve your password';
 
   /// ************ Layout Strings ************
   static const notification = 'Notification';

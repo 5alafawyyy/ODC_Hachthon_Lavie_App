@@ -47,18 +47,21 @@ ThemeData getApplicattionThemeData() => ThemeData(
         style: ElevatedButton.styleFrom(
           textStyle: getMediumStyle(
             color: ColorManager.white,
-            fontSize: FontSize.s15,
+            fontSize: FontSize.s16,
           ),
+          elevation: AppSize.s0,
+          padding: EdgeInsets.all(AppPadding.p15),
           primary: ColorManager.primary,
           shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(AppSize.s10)),
+            borderRadius: BorderRadius.circular(AppSize.s5),
+          ),
         ),
       ),
 
       // input Decoration Theme
       inputDecorationTheme: InputDecorationTheme(
         // Content Padding
-        contentPadding: const EdgeInsets.all(AppPadding.p10),
+        contentPadding: EdgeInsets.all(AppPadding.p10),
         // Hint Style
         hintStyle: getRegularStyle(
           color: ColorManager.gray,
@@ -81,7 +84,7 @@ ThemeData getApplicattionThemeData() => ThemeData(
             color: ColorManager.gray3,
             width: AppSize.s1,
           ),
-          borderRadius: const BorderRadius.all(
+          borderRadius: BorderRadius.all(
             Radius.circular(
               AppSize.s5,
             ),
@@ -94,7 +97,7 @@ ThemeData getApplicattionThemeData() => ThemeData(
             color: ColorManager.primary,
             width: AppSize.s1,
           ),
-          borderRadius: const BorderRadius.all(
+          borderRadius: BorderRadius.all(
             Radius.circular(
               AppSize.s5,
             ),
@@ -107,7 +110,7 @@ ThemeData getApplicattionThemeData() => ThemeData(
             color: ColorManager.error,
             width: AppSize.s1,
           ),
-          borderRadius: const BorderRadius.all(
+          borderRadius: BorderRadius.all(
             Radius.circular(
               AppSize.s5,
             ),
@@ -120,7 +123,7 @@ ThemeData getApplicattionThemeData() => ThemeData(
             color: ColorManager.primary,
             width: AppSize.s1,
           ),
-          borderRadius: const BorderRadius.all(
+          borderRadius: BorderRadius.all(
             Radius.circular(
               AppSize.s5,
             ),
@@ -161,8 +164,14 @@ ThemeData getApplicattionThemeData() => ThemeData(
           fontSize: FontSize.s16,
         ),
         bodySmall: getRegularStyle(
+          // Divider Text
           color: ColorManager.gray4,
           fontSize: FontSize.s12,
+        ),
+        labelMedium: getMediumStyle(
+          // Email & Password ..  Strings
+          color: ColorManager.gray5,
+          fontSize: FontSize.s14,
         ),
       ),
 
@@ -175,6 +184,12 @@ ThemeData getApplicattionThemeData() => ThemeData(
               fontSize: FontSize.s18,
             ),
           ),
+          foregroundColor: MaterialStateProperty.all(
+            ColorManager.gray2,
+          ),
+          // overlayColor: MaterialStateProperty.all(
+          //   ColorManager.primary,
+          // ),
         ),
       ),
     );
