@@ -7,10 +7,10 @@ import 'package:odc_hackathon_lavie_app/core/design/style/style_manager.dart';
 import 'package:odc_hackathon_lavie_app/core/design/theme/theme_data.dart';
 import 'package:odc_hackathon_lavie_app/core/utils/app_strings.dart';
 import 'package:odc_hackathon_lavie_app/core/utils/values_manager.dart';
-import 'package:odc_hackathon_lavie_app/presentation/components/custom_divider.dart';
+import 'package:odc_hackathon_lavie_app/presentation/components/authentication/custom_divider.dart';
+import 'package:odc_hackathon_lavie_app/presentation/components/authentication/custom_icon_button.dart';
+import 'package:odc_hackathon_lavie_app/presentation/components/authentication/custom_text_form_field.dart';
 import 'package:odc_hackathon_lavie_app/presentation/components/custom_elevated_button.dart';
-import 'package:odc_hackathon_lavie_app/presentation/components/custom_icon_button.dart';
-import 'package:odc_hackathon_lavie_app/presentation/components/custom_text_form_field.dart';
 import 'package:odc_hackathon_lavie_app/presentation/controllers/auth/auth_layout_cubit/auth_cubit.dart';
 
 class RegisterView extends StatelessWidget {

@@ -1,20 +1,16 @@
 import 'package:flutter/material.dart';
 
-void navigatorAndRemove(context, Widget widget) {
-  Navigator.pushAndRemoveUntil(
+void navigatorAndRemove(context, String routeName) {
+  Navigator.pushNamedAndRemoveUntil(
     context,
-    MaterialPageRoute(
-      builder: (context) => widget,
-    ),
-    (Route<dynamic> route) => false,
+    routeName,
+    (route) => false,
   );
 }
 
-void navigatorTo(context, Widget widget) {
-  Navigator.push(
+void navigatorTo(context, String routeName) {
+  Navigator.pushNamed(
     context,
-    MaterialPageRoute(
-      builder: (context) => widget,
-    ),
+    routeName,
   );
 }

@@ -9,8 +9,8 @@ abstract class LayoutState extends Equatable {
 
 class LayoutInitialState extends LayoutState {}
 
-class ChangeScreenState extends LayoutState {
-  final int index;
-
-  const ChangeScreenState(this.index);
-}
+class HomeScreenState extends LayoutState {}
+class BlogScreenState extends LayoutState {}
+class QRCodeScreenState extends LayoutState {}
+class ProfileScreenState extends LayoutState {}
+class NotificationScreenState extends LayoutState {}

@@ -22,8 +22,23 @@ class LayoutCubit extends Cubit<LayoutState> {
 
   int currentIndex = 2;
 
-  void changeScreen(int index) {
+  void bottomNavigationIndexChanged(int index) {
     currentIndex = index;
-    emit(ChangeScreenState(index));
+
+    if (currentIndex == 0) {
+      emit(BlogScreenState());
+    } else if (currentIndex == 1) {
+      emit(QRCodeScreenState());
+    } else if (currentIndex == 3) {
+      emit(NotificationScreenState());
+    } else if (currentIndex == 4) {
+      emit(ProfileScreenState());
+    } else {
+      emit(HomeScreenState());
+    }
+  }
+
+  void myscreen() {
+    print(screens[currentIndex]);
   }
 }

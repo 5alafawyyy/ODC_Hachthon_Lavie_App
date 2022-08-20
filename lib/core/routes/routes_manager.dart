@@ -6,6 +6,7 @@ import 'package:odc_hackathon_lavie_app/presentation/screens/authentication/logi
 import 'package:odc_hackathon_lavie_app/presentation/screens/authentication/register/register_view.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/blog/blog_view.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/home/home_view.dart';
+import 'package:odc_hackathon_lavie_app/presentation/screens/layout/layout_view.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/notifications/notification_view.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/profile/profile_view.dart';
 import 'package:odc_hackathon_lavie_app/presentation/screens/qr_code/qr_code_view.dart';
@@ -22,6 +23,7 @@ class Routes {
   static const String forgetPasswordRoute = '/forgetPassword';
 
   // Main Bottom
+  static const String layoutRoute = '/layout';
   static const String homeRoute = '/home';
   static const String notificationRoute = '/notification';
   static const String profileRoute = '/profile';
@@ -46,6 +48,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const RegisterView());
       case Routes.forgetPasswordRoute:
         return MaterialPageRoute(builder: (_) => const ForgetPasswordView());
+      case Routes.layoutRoute:
+        return MaterialPageRoute(builder: (_) => LayoutView());
       case Routes.homeRoute:
         return MaterialPageRoute(builder: (_) => const HomeView());
       case Routes.notificationRoute:

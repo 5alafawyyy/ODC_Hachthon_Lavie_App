@@ -7,8 +7,8 @@ import 'package:odc_hackathon_lavie_app/core/design/theme/theme_data.dart';
 import 'package:odc_hackathon_lavie_app/core/network/local/cache_helper.dart';
 import 'package:odc_hackathon_lavie_app/core/network/remote/dio_helper.dart';
 import 'package:odc_hackathon_lavie_app/core/routes/routes_manager.dart';
+import 'package:odc_hackathon_lavie_app/core/services/services_locator.dart';
 import 'package:odc_hackathon_lavie_app/core/utils/app_strings.dart';
-import 'package:odc_hackathon_lavie_app/presentation/controllers/auth/auth_layout_cubit/auth_cubit.dart';
 import 'package:odc_hackathon_lavie_app/presentation/controllers/observer.dart';
 
 Future<void> main() async {
@@ -18,7 +18,7 @@ Future<void> main() async {
   await DioHelper.init();
   await CacheHelper.init();
   await ScreenUtil.ensureScreenSize();
-  // ServicesLocator().init();
+  ServicesLocator().init();
   Bloc.observer = MyObserver();
   runApp(const MyApp());
 
@@ -37,13 +37,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider(
-          create: (context) => AuthCubit(),
-        ),
-      ],
-      child: ScreenUtilInit(
+    return  ScreenUtilInit(
           designSize: const Size(360, 690),
           minTextAdapt: true,
           splitScreenMode: true,
@@ -55,7 +49,7 @@ class MyApp extends StatelessWidget {
               theme: getApplicattionThemeData(),
               debugShowCheckedModeBanner: false,
             );
-          }),
+          }
     );
   }
 }
