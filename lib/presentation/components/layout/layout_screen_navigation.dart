@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:odc_hackathon_lavie_app/presentation/controllers/layout_cubit/layout_cubit.dart';
 import 'package:odc_hackathon_lavie_app/presentation/controllers/layout_cubit/layout_state.dart';
+import 'package:odc_hackathon_lavie_app/presentation/controllers/qr_code_cubit/qr_code_cubit.dart';
 
 class CustomBody extends StatelessWidget {
   const CustomBody({Key? key}) : super(key: key);
@@ -13,6 +14,7 @@ class CustomBody extends StatelessWidget {
         if (state is BlogScreenState) {
           return BlocProvider.of<LayoutCubit>(context).screens[0];
         } else if (state is QRCodeScreenState) {
+          // BlocProvider.of<QrCodeCubit>(context).scanQR();
           return BlocProvider.of<LayoutCubit>(context).screens[1];
         } else if (state is NotificationScreenState) {
           return BlocProvider.of<LayoutCubit>(context).screens[3];

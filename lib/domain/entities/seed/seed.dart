@@ -1,9 +1,9 @@
 import 'package:equatable/equatable.dart';
 
 class Seed extends Equatable {
-  final int id;
-  final String name;
-  final String description;
+  final int? id;
+  final String? name;
+  final String? description;
 
   const Seed({
     required this.id,
@@ -13,8 +13,8 @@ class Seed extends Equatable {
 
   @override
   List<Object> get props => [
-        id,
-        name,
-        description,
+        // id,
+        // name,
+        // description,
       ];
 }

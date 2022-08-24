@@ -5,7 +5,7 @@ import 'package:odc_hackathon_lavie_app/core/design/style/style_manager.dart';
 import 'package:odc_hackathon_lavie_app/core/utils/values_manager.dart';
 
 ThemeData getApplicattionThemeData() => ThemeData(
-  visualDensity: VisualDensity.adaptivePlatformDensity,
+      visualDensity: VisualDensity.adaptivePlatformDensity,
       // Main Font Family
       fontFamily: FontConstants.fontfamily,
 

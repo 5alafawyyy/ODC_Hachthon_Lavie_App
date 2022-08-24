@@ -1,6 +1,7 @@
 class AppStrings {
   static const appName = 'Lavie';
   static const noRouteFound = 'No Route Found';
+  static const noInternetConnection = 'No Internet Connection';
 
   /// ************ Auth Strings ************
   static const signUp = 'Sign up';
@@ -34,6 +35,8 @@ class AppStrings {
   static const addToCart = 'Add To Cart';
 
   /// ************ Scan Strings ************
+  static const scanQRCode = 'Scan QR Code';
+  static const stertScan = 'Strart scan';
   static const subLight = 'Sun light';
   static const waterCapacity = 'Water Capacity';
   static const temperature = 'Temperature';

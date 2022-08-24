@@ -11,7 +11,7 @@ class ApiConstance {
   static const String en = 'en';
 
   // Authentication Urls
-  static const String baseAuthUrl = '$baseUrl/auth';
+  static const String baseAuthUrl = '/auth';
   static const String googleUrl = '$baseAuthUrl/google';
   static const String facebookUrl = '$baseAuthUrl/facebook';
   static const String signinUrl = '$baseAuthUrl/signin';
@@ -21,7 +21,7 @@ class ApiConstance {
   static const String resetPasswordUrl = '$baseAuthUrl/reset-password';
 
   // Products Urls
-  static const String productsUrl = '$baseUrl/products';
+  static const String productsUrl = '/products';
   static const String productsFiltersUrl = '$productsUrl/filters';
   static const String productsBlogsUrl = '$productsUrl/blogs';
   static String productsBlogsUrWithlIdUrl(String id) =>
@@ -31,28 +31,28 @@ class ApiConstance {
   static String productsBuy = '$productsUrl/buy';
 
   // Plants Urls
-  static const String plantsUrl = '$baseUrl/plants';
+  static const String plantsUrl = '/plants';
   static String plantsWithPlantIdUrl(String id) =>
       '$plantsUrl/{plantId}?plantId=$id';
 
   // Seeds Urls
-  static const String seedsUrl = '$baseUrl/seeds';
+  static const String seedsUrl = '/seeds';
   static String seedsWithSeedIdUrl(String id) =>
       '$seedsUrl/{seedId}?seedId=$id';
 
   // Tools Urls
-  static const String toolsUrl = '$baseUrl/tools';
+  static const String toolsUrl = '/tools';
   static String toolsWithToolIdUrl(String id) =>
       '$toolsUrl/{toolid}?toolId=$id';
 
   // User Urls
-  static const String userUrl = '$baseUrl/user/me';
+  static const String userUrl = '/user/me';
   static const String claimFreeSeedsUrl = '$userUrl/claimFreeSeeds';
   static String recieptsWithRecieptId(String id) =>
-      '$baseUrl/user/reciepts/{recieptId}?recieptId=$id';
+      '/user/reciepts/{recieptId}?recieptId=$id';
 
   // Forums Urls
   static String forumsSearchByTitleUrl(String title) =>
-      '$baseUrl/forums?search=$title';
-  static const String forumMeUrl = '$baseUrl/forums/me';
+      '/forums?search=$title';
+  static const String forumMeUrl = '/forums/me';
 }

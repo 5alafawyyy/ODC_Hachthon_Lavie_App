@@ -8,7 +8,7 @@ import 'package:odc_hackathon_lavie_app/presentation/controllers/layout_cubit/la
 import 'package:odc_hackathon_lavie_app/presentation/controllers/layout_cubit/layout_state.dart';
 
 class CustomBottomNav extends StatelessWidget {
-  CustomBottomNav({Key? key}) : super(key: key);
+  const CustomBottomNav({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,12 +18,58 @@ class CustomBottomNav extends StatelessWidget {
           child: CurvedNavigationBar(
             index: 2,
             height: AppSize.s64,
-            items: iconList,
+            items: [
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Image.asset(
+                  IconAssets.blogIcon,
+                  color: BlocProvider.of<LayoutCubit>(context).currentIndex == 0
+                      ? ColorManager.white
+                      : ColorManager.black,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Image.asset(
+                  IconAssets.qrCodeScanIcon,
+                  color: BlocProvider.of<LayoutCubit>(context).currentIndex == 1
+                      ? ColorManager.white
+                      : ColorManager.black,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset(
+                  IconAssets.homeIcon,
+                  color: BlocProvider.of<LayoutCubit>(context).currentIndex == 2
+                      ? ColorManager.white
+                      : ColorManager.black,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Image.asset(
+                  IconAssets.notificationIcon,
+                  color: BlocProvider.of<LayoutCubit>(context).currentIndex == 3
+                      ? ColorManager.white
+                      : ColorManager.black,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Image.asset(
+                  IconAssets.profileIcon,
+                  color: BlocProvider.of<LayoutCubit>(context).currentIndex == 4
+                      ? ColorManager.white
+                      : ColorManager.black,
+                ),
+              ),
+            ],
             color: ColorManager.whiteShadow2,
             buttonBackgroundColor: ColorManager.primary,
             backgroundColor: ColorManager.white,
             animationCurve: Curves.easeInOut,
-            animationDuration: const Duration(milliseconds: AppSize.s250),
+            animationDuration: const Duration(milliseconds: AppSize.s250C),
             onTap: (index) {
               BlocProvider.of<LayoutCubit>(context)
                   .bottomNavigationIndexChanged(index);
@@ -34,26 +80,4 @@ class CustomBottomNav extends StatelessWidget {
       },
     );
   }
-
-  final List<Widget> iconList = [
-    Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Image.asset(IconAssets.blogIcon)),
-    Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Image.asset(IconAssets.qrCodeScanIcon)),
-    Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Image.asset(
-        IconAssets.homeIcon,
-        color: ColorManager.white,
-      ),
-    ),
-    Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Image.asset(IconAssets.notificationIcon)),
-    Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Image.asset(IconAssets.profileIcon)),
-  ];
 }

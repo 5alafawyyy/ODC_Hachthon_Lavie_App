@@ -43,13 +43,13 @@ class RouteGenerator {
       case Routes.authLayoutRoute:
         return MaterialPageRoute(builder: (_) => const AuthLayoutView());
       case Routes.loginRoute:
-        return MaterialPageRoute(builder: (_) => const LoginView());
+        return MaterialPageRoute(builder: (_) =>  LoginView());
       case Routes.registerRoute:
         return MaterialPageRoute(builder: (_) => const RegisterView());
       case Routes.forgetPasswordRoute:
         return MaterialPageRoute(builder: (_) => const ForgetPasswordView());
       case Routes.layoutRoute:
-        return MaterialPageRoute(builder: (_) => LayoutView());
+        return MaterialPageRoute(builder: (_) => const LayoutView());
       case Routes.homeRoute:
         return MaterialPageRoute(builder: (_) => const HomeView());
       case Routes.notificationRoute:

@@ -34,11 +34,16 @@ dependencies:
   equatable: ^2.0.3
   flutter:
     sdk: flutter
+  flutter_barcode_scanner: ^2.0.0
   flutter_bloc: ^8.1.1
   flutter_screenutil: ^5.5.3+2
   get_it: ^7.2.0
   google_fonts: ^3.0.1
+  google_sign_in: ^5.4.1
+  internet_connection_checker: ^0.0.1+4
+  modal_progress_hud_nsn: ^0.3.0
   shared_preferences: ^2.0.15
+  top_snackbar_flutter: ^2.1.1
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -65,6 +70,27 @@ flutter:
     - assets/icons/new_notification.png
     - assets/icons/profile.png
     - assets/icons/qr_code_scan.png
+    - assets/images/user1.png
+    - assets/images/user2.png
+    - assets/images/user3.png
+    - assets/images/user4.png
+    - assets/images/qr_background.png
+    - assets/images/qr-code.png
+    - assets/images/tree-test.png
+    - assets/images/scan-box.png
+    - assets/images/scan-slice.png
+    - assets/icons/add_photo.png
+    - assets/icons/change.png
+    - assets/icons/filter.png
+    - assets/icons/not_found.png
+    - assets/icons/points.png
+    - assets/icons/remove.png
+    - assets/icons/search.png
+    - assets/icons/sun.png
+    - assets/icons/temperature.png
+    - assets/icons/water.png
+    - assets/icons/cart.png
+
 
   fonts:
     - family: Meddon # For logo

@@ -4,7 +4,7 @@ class ColorManager {
   //Main Colors
   static const Color transparent = Colors.transparent;
   static Color logoColor = const Color(0xff1AAA55);
-  static Color primary = const Color(0xff1ABC00);
+  static const Color primary =  Color(0xff1ABC00);
   static Color lightPrimary = const Color(0xff69F053);
   static Color white = const Color(0xffFFFFFF);
   static Color black = const Color(0xff3A3A3A);
@@ -17,6 +17,7 @@ class ColorManager {
   static Color gray5 = const Color(0xff6F6F6F); // Text
   static Color gray6 = const Color(0xffBDBDBD);
   static Color lightGrey = const Color(0xffB7B7B7);
+  static Color absoluteLightGrey = const Color(0xffE8EBF0);
 
   // Other Colors
   static Color iconColor = const Color(0xffBDBDBD); // Icons

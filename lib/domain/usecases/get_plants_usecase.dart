@@ -6,6 +6,7 @@ import 'package:odc_hackathon_lavie_app/domain/repository/base_products_reposito
 
 class GetPlantsUseCase extends BaseUsecase<List<Plant>, NoParameters> {
   final BaseProductsRepository baseProductsRepository;
+  
   GetPlantsUseCase(this.baseProductsRepository);
 
   @override

@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:odc_hackathon_lavie_app/core/design/assets/assets_manager.dart';
 import 'package:odc_hackathon_lavie_app/core/design/colors/color_manager.dart';
+import 'package:odc_hackathon_lavie_app/core/design/navigation/navigation.dart';
 import 'package:odc_hackathon_lavie_app/core/routes/routes_manager.dart';
 import 'package:odc_hackathon_lavie_app/core/utils/app_constants.dart';
 
@@ -25,10 +26,15 @@ class _SplashViewState extends State<SplashView> {
   }
 
   _goNext() {
-    Navigator.pushReplacementNamed(
-      context,
-      Routes.authLayoutRoute,
-    );
+    AppConstants.userToken == null
+        ? navigatorAndRemove(
+            context,
+            Routes.authLayoutRoute,
+          )
+        : navigatorAndRemove(
+            context,
+            Routes.layoutRoute,
+          );
   }
 
   @override

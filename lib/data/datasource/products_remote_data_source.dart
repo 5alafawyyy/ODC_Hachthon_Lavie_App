@@ -15,7 +15,7 @@ abstract class BaseProductsRemoteDataSource {
   Future<List<Product>> getAllProduct();
 }
 
-class PlantRemoteDataSource extends BaseProductsRemoteDataSource {
+class ProductsRemoteDataSource extends BaseProductsRemoteDataSource {
   @override
   Future<List<Product>> getAllProduct() async {
     final response = await DioHelper.getData(url: ApiConstance.productsUrl);
